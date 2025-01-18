@@ -3,3 +3,5 @@
 .DS_Store
 environment.yml
 */.ipynb_checkpoints/*
+best_model.pth
+fine_tuned_model.pth
