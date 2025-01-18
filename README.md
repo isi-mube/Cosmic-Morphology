@@ -6,21 +6,42 @@
   <small><em>Hubble Beholds a Big, Beautiful Blue Galaxy<br>NGC 2336, captured by the NASA/ESA Hubble Space Telescope.</em></small>
 </p>
 
----
-
 ## **Overview**
 This **project** focuses on building a scalable data infrastructure to store and analyze real cosmic data retrieved from the NASA API. The primary goal is to develop a robust **multiclass classification model** capable of identifying various celestial phenomena, such as galaxies, nebulae, and stars.
 
-This project is implemented in Python using **PyTorch** for model development, with occasional use of Jupyter Notebooks for visualization and experimentation.
+🪐 Current Progress:
+- Data extraction from NASA API and preparation.
+- Exploratory Data Analysis (EDA) to understand data distribution & images.
+- Training of a **Baseline Model** with ResNet50 and **Fine-Tuning**.
+- Model evaluation and visualization of results.
+  
+## **Project Structure**
+
+### 📂 Directories:
+- **`1-Data-Collection`**: Scripts for data extraction from NASA API, fetching cosmic images.
+- **`2-EDA`**: Notebooks and scripts for Exploratory Data Analysis (EDA), including class imbalance visualizations.
+- **`3-Train-Val-Test-Split`**: Code for splitting data into training, validation, and test sets for model training.
+- **`4-Machine-Learning`**: Contains:
+  - **Baseline Model**: Initial ResNet50-based training and evaluation.
+  - **Fine-Tuning**: Transfer learning with additional layers and parameters.
+  - **Evaluation**: Metrics visualizations and model performance analysis.
+  - 
+
+## **🚀 Next Steps**
+
+1. **Expand Dataset**:
+   - Incorporate **SpaceNet dataset** ([Kaggle link](https://www.kaggle.com/datasets/razaimam45/spacenet-an-optimally-distributed-astronomy-data)).
+   - Evaluate the impact of synthetic images on model performance.
+   
+2. **Data Cleaning**:
+   - Further refine the dataset to ensure no mislabeled or noisy images (e.g., human activities or non-cosmic objects).
+
+3. **Model Enhancements**:
+   - Experiment with other architectures like **EfficientNet** or **Vision Transformers** to improve classification accuracy.
+   - Optimize hyperparameters for better performance.
 
 ---
 
-## **Current Progress**
-### 
-- **Data Lake Development**: Cloud storage set up for scalable data storage. Initial NASA API integration completed for data retrieval.
-
-- **Model Development**: Baseline CNN implemented in PyTorch.
----
 
 ## **Bibliography**
 - Lintott, C. J. et al. (2008). Galaxy Zoo: Morphologies derived from visual inspection of galaxies from the Sloan Digital Sky Survey. *Monthly Notices of the Royal Astronomical Society*, 389(3), 1179–1189.
